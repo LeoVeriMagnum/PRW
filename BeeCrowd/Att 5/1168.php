@@ -1,9 +1,9 @@
 <?php
-$n = intval(readline());
+$n = intval(trim(readline()));
 while($n>0){
-    $p = readline();
+    $p = trim(readline());
     $n--;
-    $cont = 0;
+    $cont = '0';
     for($x = 0; $x < strlen($p);$x++){
         if($p[$x]==1){
             $cont += 2;
@@ -22,4 +22,3 @@ while($n>0){
     echo "$cont leds\n";
 }
 ?>
-
